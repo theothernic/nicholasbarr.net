@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [\App\Http\Controllers\PageController::class, 'front'])->name('frontpage');
+
+Route::prefix('journal')->group(function () {
+    Route::get('/', [\App\Http\Controllers\JournalController::class, 'index'])->name('journal.index');
+    Route::get('/{slug}.html', [\App\Http\Controllers\JournalController::class, 'show'])->name('journal.show');
 });

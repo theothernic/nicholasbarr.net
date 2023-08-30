@@ -1,0 +1,16 @@
+:root {
+    --color-teal: #6F939F;
+    --color-red: #D51F24;
+    --color-dark-blue: #03324e;
+    --color-dark-blue-2: #07476e;
+    --color-mid-teal: #06778c;
+
+
+}
+
+
+#masthead {
+    --border-color: var(--color-red);
+    --nameplate-color: var(--color-teal);
+    --title-color: var(--color-dark-blue-2);
+}

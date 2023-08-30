@@ -1,0 +1,12 @@
+@import 'colors';
+@import 'fonts';
+@import 'resets';
+
+body {
+    font: 400 normal 16px 'Alegreya', serif;
+}
+
+@import 'frontpage';
+@import 'journal';
+
+
