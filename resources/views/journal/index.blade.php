@@ -3,5 +3,7 @@
 @section('journal.title', $page->title)
 
 @section('content')
-    JOURNALLLING.
+    @if(is_null($record))
+        <div>There are no journal entries to display at the moment.</div>
+    @endif
 @endsection
